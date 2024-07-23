@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="cardGame.css">
+</head>
+<body>
+    <div id="gameSelection" class="game">
+        <div class="section" id="card">Card
+            <div class="cards">
+            </div>
+        </div>
+        <div class="section1" id="snake">Snake</div>
+        <div class="section2" id="toys">frog</div>
+    </div>
+    <div id="gameContainer" style="display:none;">
+        <div class="cardSet" id="set1"></div>
+        <div class="divider"></div>
+        <div class="cardSet" id="set2"></div>
+    </div>
+    <div id="score" style="display:none;">Score: 0</div>
+    <script>
+        document.getElementById('snake').addEventListener('click', function() {
+            window.location.href = 'snake.html';
+        });
+        document.getElementById('toys').addEventListener('click', function() {
+            window.location.href = 'Toys.html';
+        });
+    </script>
+    <script src="cardGame.js"></script>
+</body>
+</html>
